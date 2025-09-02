@@ -7,36 +7,15 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #fff;
-      background: #0a0a0a;
-      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+      background: #0a0f0d;
+      color: #e0ffe0;
     }
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle, rgba(0, 255, 150, 0.2), transparent 70%) repeat;
-      background-size: 200px 200px;
-      animation: pulse 6s infinite alternate;
-      z-index: -2;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 0.6; }
-      100% { transform: scale(1.2); opacity: 0.8; }
-    }
-
-     
-
-
 
     header {
       text-align: center;
       padding: 20px;
+      background: #001a12;
       border-bottom: 2px solid #00ff9f;
     }
 
@@ -80,8 +59,9 @@
     .container {
       width: 90%;
       max-width: 1000px;
-      margin: auto;
-      padding: 30px;
+      margin: 20px auto;
+      display: grid;
+      gap: 20px;
     }
 
     .box {
@@ -108,107 +88,42 @@
   </style>
 </head>
 <body>
-  
-<div class="header">
-  <div class="header-left">
-    <h1>IRTAZA HASSAN</h1>
-    <h2>GAME DEVELOPER</h2>
+  <header>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:irtazahassan460@gmail.com">irtazahassan460@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/irtazahassan460" target="_blank">linkedin.com/in/irtazahassan460</a></p>
+    <p>GitHub: <a href="https://github.com/irtazahassan460" target="_blank">github.com/irtazahassan460</a></p>
+  </header>
+
+  <div class="header">
+    <div class="header-left">
+      <h1>Irtaza Hassan</h1>
+      <p>Unity Game Developer | Computer Science Graduate</p>
+    </div>
+    <div class="header-right">
+      <img src="irtaza.png" alt="Profile Picture">
+    </div>
   </div>
 
-  <!-- image file must be named exactly "irtaza.png" and be in the same folder as index.html -->
-  <div class="header-right">
-    <img src="irtaza.png" alt="Irtaza Hassan" class="profile-pic">
-  </div>
-</div>
+  <div class="container">
+    <div class="box">
+      <h2>About Me</h2>
+      <p>I am a passionate Unity Game Developer with a strong background in computer science. I enjoy building creative, interactive, and optimized games while exploring new technologies in AI and software development.</p>
+    </div>
 
-
-
-    <section class="contact">
-      <h3>Contact Info</h3>
-      <p>📞 0303 7872480</p>
-      <p>📍 Chak # 2/10-L Harappa</p>
-      <p>📧 <a href="mailto:irtazahassan460@gmail.com">irtazahassan460@gmail.com</a></p>
-      <p>🔗 <a href="https://linkedin.com/in/irtaza-hassan-236b40251">linkedin.com/in/irtaza-hassan-236b40251</a></p>
-      
-    </section>
-
-    <section class="profile">
-      <h3>Profile</h3>
-      <p>
-        Recent Computer Science graduate with a strong passion for game development, 
-        specializing in Unity and C#. Proficient in building 2D/3D gameplay mechanics, UI 
-        systems, and interactive features. Eager to join a creative team where I can contribute 
-        to real projects, learn industry best practices, and grow as a game developer. 
-        Committed to turning my passion into impactful, player-focused experiences.
-      </p>
-    </section>
-
-    <section class="education">
-      <h3>Education</h3>
+    <div class="box">
+      <h2>Projects</h2>
       <ul>
-        <li><b>BS Computer Science</b>, University of Sahiwal (2021–2025)</li>
-        <li><b>FSc</b>, Punjab College Sahiwal (2018–2020)</li>
-        <li><b>Matric</b>, HTM Secondary School (2016–2018)</li>
+        <li>🎮 Fast-paced Unity color-matching donut game</li>
+        <li>⚡ IoT-Based Medication Adherence Tracker (ESP32, Blynk, RTC)</li>
+        <li>🤖 Healthcare Cost Prediction System using AI (Flask + ML)</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="skills">
-      <h3>Skills</h3>
-      <ul>
-        <li>🎮 Game Development</li>
-        <li>💻 C#</li>
-        <li>🕹 Unity</li>
-      </ul>
-    </section>
-
-    <section class="certifications">
-      <h3>Certifications</h3>
-      <ul>
-        <li>
-          <b>Unity Essentials Pathway</b> – 
-          <a href="https://www.credly.com/badges/3a469635-b457-4eb8-9ee4-fe522a91b6e1/public_url" target="_blank">
-            View Certificate
-          </a>
-        </li>
-        <li>
-          <b>Unity Junior Programmer</b> – 
-          <a href="https://www.credly.com/badges/2c368984-ce37-428d-849f-cd3c04336006/public_url" target="_blank">
-            View Certificate
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="projects">
-      <h3>Projects</h3>
-      <ul>
-        <li>
-          <b>Football Challenge</b> – 
-          <a href="https://play.unity.com/en/games/6516982c-cb9c-4a04-8184-f16153a21078/football-challenge" target="_blank">
-            Play Now
-          </a>
-        </li>
-        <li>
-          <b>Sky Arena: Football Clash</b> – 
-          <a href="https://play.unity.com/en/games/7e093610-184e-4eac-af46-419ade582db5/sky-areana-football-clash" target="_blank">
-            Play Now
-          </a>
-        </li>
-        <li>
-          <b>Clicky Crates</b> – 
-          <a href="https://play.unity.com/en/games/1b446c58-9a8c-4c0a-9d1e-9f01a14cf43c/clicky-crates" target="_blank">
-            Play Now
-          </a>
-        </li>
-        <li>
-          <b>Flappy Bird</b> – 
-          <a href="https://play.unity.com/en/games/30acbf71-6761-4736-aadf-d38b99945ff1/flappy-bird" target="_blank">
-            Play Now
-          </a>
-        </li>
-      </ul>
-    </section>
+    <div class="box">
+      <h2>Skills</h2>
+      <p>Unity, C#, Game Mechanics, UI/UX for Games, AI/ML (Python), Flask, IoT (ESP32, Arduino), HTML, CSS, GitHub</p>
+    </div>
   </div>
 </body>
 </html>
- -->
