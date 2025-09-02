@@ -1,0 +1,112 @@
+/* ASUS ROG Gamer Vibe */
+
+/* Background */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0a0f;
+  color: #e0e0e0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Animated background (moving gradient) */
+.gamer-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(120deg, #ff004d, #6600ff, #00eaff);
+  background-size: 300% 300%;
+  z-index: -1;
+  animation: bgAnimation 12s infinite alternate;
+}
+@keyframes bgAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Header */
+/* Header */
+/* keep your theme — add/replace only these header-related rules */
+
+.header {
+  display: flex;
+  justify-content: space-between; /* left text, right image */
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto; /* centers header container on page */
+}
+
+.header-left {
+  text-align: left; /* change to center if you want the text centered instead */
+  /* optional: max-width so text doesn't overflow */
+  max-width: calc(100% - 170px); /* leaves room for the image */
+}
+
+/* profile picture size — change width to make it smaller/larger */
+.profile-pic {
+  width: 120px;   /* <-- set desired size here (e.g., 100px, 120px, 150px) */
+  height: auto;   /* keeps aspect ratio, prevents squashing */
+  border-radius: 50%; /* circular */
+  border: 3px solid #00ff9f; /* keeps green neon border */
+  box-shadow: 0 0 18px rgba(0,255,159,0.6);
+}
+
+
+}
+
+
+.neon-text {
+  font-size: 3rem;
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff;
+}
+.tagline {
+  font-size: 1.2rem;
+  color: #ff004d;
+}
+
+/* Cards */
+.card {
+  background: rgba(20, 20, 30, 0.9);
+  border: 2px solid #6600ff;
+  border-radius: 15px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 700px;
+  box-shadow: 0 0 15px #6600ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #ff004d;
+}
+.card h2 {
+  color: #00eaff;
+  margin-bottom: 1rem;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+.card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Links */
+a {
+  color: #ff004d;
+  text-decoration: none;
+}
+a:hover {
+  color: #00eaff;
+}
+
+/* Footer */
+footer {
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  color: #888;
+}
