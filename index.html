@@ -125,6 +125,42 @@
       margin-bottom: 6px;
     }
 
+.education ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.education li {
+  position: relative;
+  background: rgba(0, 255, 159, 0.05);
+  border-left: 4px solid #00ff9f; /* neon left border */
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.education li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 255, 159, 0.3);
+}
+
+.education li b {
+  color: #00ff9f;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.education li span {
+  font-size: 0.9rem;
+  color: #bbb;
+  text-shadow: 0 0 2px #00ff9f22;
+}
+
+    
     /* Certifications & Projects Grid */
 .certifications ul,
 .projects ul {
@@ -215,14 +251,27 @@
       </p>
     </section>
 
-    <section class="education">
-      <h3>Education</h3>
-      <ul>
-        <li><b>BS Computer Science</b>, University of Sahiwal (2021–2025)</li>
-        <li><b>FSc</b>, Punjab College Sahiwal (2018–2020)</li>
-        <li><b>Matric</b>, HTM Secondary School (2016–2018)</li>
-      </ul>
-    </section>
+   <section class="education">
+  <h3>Education</h3>
+  <ul>
+    <li>
+      <b>BS Computer Science</b>
+      <span>University of Sahiwal</span>
+       <span>(2021–2025)</span>
+    </li>
+    <li>
+      <b>FSc</b>
+      <span>Punjab College Sahiwal</span>
+       <span>(2018–2020)</span>
+    </li>
+    <li>
+      <b>Matric</b>
+      <span>HTM Secondary School</span>
+       <span>(2016–2018)</span>
+    </li>
+  </ul>
+</section>
+
 
     <section class="skills">
       <h3>Skills</h3>
