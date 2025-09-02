@@ -125,6 +125,43 @@
       margin-bottom: 6px;
     }
 
+    .profile {
+  background: rgba(0, 255, 159, 0.05);
+  border-left: 4px solid #00ff9f; /* neon left accent */
+  border-radius: 12px;
+  padding: 20px 25px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 255, 159, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 159, 0.4);
+}
+
+/* Optional glowing effect at top corner */
+.profile::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 12px;
+  height: 12px;
+  background: #00ff9f;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00ff9faa, 0 0 20px #00ff9f55;
+}
+
+/* Text styling */
+.profile p {
+  line-height: 1.6;
+  color: #ddd;
+  font-size: 0.95rem;
+  text-shadow: 0 0 2px #00ff9f22;
+}
+
+    
 .education ul {
   display: flex;
   flex-direction: column;
@@ -244,7 +281,7 @@
     <section class="profile">
       <h3>Profile</h3>
       <p>
-        Recent Computer Science graduate with a strong passion for game development, 
+        Computer Science graduate with a strong passion for game development, 
         specializing in Unity and C#. Proficient in building 2D/3D gameplay mechanics, UI 
         systems, and interactive features. Eager to join a creative team where I can contribute 
         to real projects, learn industry best practices, and grow as a game developer. 
