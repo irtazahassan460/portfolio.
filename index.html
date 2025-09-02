@@ -19,7 +19,7 @@
       overflow-x: hidden;
     }
 
-    /* Animated gamer background  */
+    /* Animated gamer background */
     body::before {
       content: "";
       position: fixed;
@@ -38,34 +38,51 @@
       100% { transform: scale(1.2); opacity: 0.8; }
     }
 
-    /* Container */
-    .container {
-      width: 90%;
+    /* Header layout */
+    .header {
+      display: flex;
+      align-items: center; /* vertical center */
+      justify-content: space-between; /* left and right sides */
       max-width: 1000px;
-      margin: auto;
-      padding: 30px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    header {
-      text-align: center;
-      margin-bottom: 40px;
+    .header-left {
+      text-align: left;
     }
 
-    header h1 {
+    .header-left h1 {
       font-size: 2.5rem;
       color: #00ff9f;
       text-shadow: 0 0 15px #00ff9f, 0 0 30px #008b5f;
     }
 
-    header h2 {
+    .header-left h2 {
       font-size: 1.5rem;
       color: #bbb;
       margin-top: 10px;
     }
 
+    .header-right img {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #00ff9f44;
+    }
+
+    /* Main container for all sections */
+    .main-container {
+      max-width: 800px;
+      margin: 0 auto 50px auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
     /* Section blocks */
     section {
-      margin-bottom: 30px;
       padding: 20px;
       background: rgba(20, 20, 20, 0.85);
       border: 1px solid #00ff9f44;
@@ -104,27 +121,28 @@
       text-decoration: underline;
     }
 
-    /* Contact style */
     .contact p {
       margin-bottom: 6px;
     }
+
   </style>
 </head>
 <body>
-  
-<div class="header">
-  <div class="header-left">
-    <h1>IRTAZA HASSAN</h1>
-    <h2>GAME DEVELOPER</h2>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <h1>IRTAZA HASSAN</h1>
+      <h2>GAME DEVELOPER</h2>
+    </div>
+
+    <div class="header-right">
+      <img src="irtaza.png" alt="Irtaza Hassan" class="profile-pic">
+    </div>
   </div>
 
-  <!-- image file must be named exactly "irtaza.png" and be in the same folder as index.html -->
-  <div class="header-right">
-    <img src="irtaza.png" alt="Irtaza Hassan" class="profile-pic">
-  </div>
-</div>
-
-
+  <!-- Centered Main Content -->
+  <div class="main-container">
 
     <section class="contact">
       <h3>Contact Info</h3>
@@ -132,7 +150,6 @@
       <p>📍 Chak # 2/10-L Harappa</p>
       <p>📧 <a href="mailto:irtazahassan460@gmail.com">irtazahassan460@gmail.com</a></p>
       <p>🔗 <a href="https://linkedin.com/in/irtaza-hassan-236b40251">linkedin.com/in/irtaza-hassan-236b40251</a></p>
-      
     </section>
 
     <section class="profile">
@@ -211,6 +228,8 @@
         </li>
       </ul>
     </section>
-  </div>
+
+  </div> <!-- end main-container -->
+
 </body>
 </html>
