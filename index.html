@@ -125,6 +125,58 @@
       margin-bottom: 6px;
     }
 
+    /* Certifications & Projects Grid */
+.certifications ul,
+.projects ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.certifications li,
+.projects li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 255, 159, 0.05);
+  border: 1px solid #00ff9f44;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 159, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certifications li:hover,
+.projects li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 255, 159, 0.3);
+}
+
+/* Buttons for links */
+.certifications a,
+.projects a {
+  background: #00ff9f;
+  color: #0a0a0a;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.certifications a:hover,
+.projects a:hover {
+  background: #00b36b;
+  color: #fff;
+}
+
+/* Project title bold */
+.projects li b,
+.certifications li b {
+  font-weight: bold;
+}
+
+
   </style>
 </head>
 <body>
