@@ -140,18 +140,7 @@
   box-shadow: 0 0 25px rgba(0, 255, 159, 0.4);
 }
 
-/* Optional glowing effect at top corner */
-.profile::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  width: 12px;
-  height: 12px;
-  background: #00ff9f;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #00ff9faa, 0 0 20px #00ff9f55;
-}
+
 
 /* Text styling */
 .profile p {
@@ -159,6 +148,57 @@
   color: #ddd;
   font-size: 0.95rem;
   text-shadow: 0 0 2px #00ff9f22;
+}
+
+    .skills {
+  background: rgba(0, 255, 159, 0.05);
+  border-left: 4px solid #00ff9f;
+  border-radius: 12px;
+  padding: 20px 25px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 255, 159, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 159, 0.4);
+}
+
+.skills h3 {
+  margin-bottom: 15px;
+}
+
+/* Skill bars container */
+.skill-item {
+  margin-bottom: 15px;
+}
+
+/* Skill name */
+.skill-item span {
+  display: block;
+  color: #00ff9f;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Bar background */
+.skill-bar {
+  width: 100%;
+  height: 12px;
+  background: #111;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Skill level */
+.skill-bar div {
+  height: 100%;
+  width: 0%; /* start at 0 for animation */
+  background: linear-gradient(90deg, #00ff9f, #00b36b);
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ff9f66, 0 0 20px #00ff9f33;
+  transition: width 1s ease-in-out;
 }
 
     
@@ -311,14 +351,26 @@
 </section>
 
 
-    <section class="skills">
-      <h3>Skills</h3>
-      <ul>
-        <li>🎮 Game Development</li>
-        <li>💻 C#</li>
-        <li>🕹 Unity</li>
-      </ul>
-    </section>
+   <section class="skills">
+  <h3>Skills</h3>
+
+  <div class="skill-item">
+    <span>🎮 Game Development</span>
+    <div class="skill-bar"><div style="width: 90%;"></div></div>
+  </div>
+
+  <div class="skill-item">
+    <span>💻 C#</span>
+    <div class="skill-bar"><div style="width: 85%;"></div></div>
+  </div>
+
+  <div class="skill-item">
+    <span>🕹 Unity</span>
+    <div class="skill-bar"><div style="width: 80%;"></div></div>
+  </div>
+
+</section>
+
 
     <section class="certifications">
       <h3>Certifications</h3>
