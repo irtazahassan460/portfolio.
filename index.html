@@ -126,26 +126,49 @@
     }
 
 .education ul {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 25px;
+  padding-left: 30px;
+}
+
+.education ul::before {
+  content: "";
+  position: absolute;
+  left: 15px;           /* line position */
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #00ff9f44; /* neon vertical line */
+  border-radius: 2px;
 }
 
 .education li {
   position: relative;
   background: rgba(0, 255, 159, 0.05);
-  border-left: 4px solid #00ff9f; /* neon left border */
-  padding: 12px 15px;
   border-radius: 8px;
+  padding: 12px 15px;
   transition: transform 0.3s, box-shadow 0.3s;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
 }
 
 .education li:hover {
   transform: translateY(-3px);
   box-shadow: 0 0 25px rgba(0, 255, 159, 0.3);
+}
+
+/* Neon dot for each timeline item */
+.education li::before {
+  content: "";
+  position: absolute;
+  left: -25px;         /* position to align with vertical line */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: #00ff9f;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00ff9faa, 0 0 20px #00ff9f55;
 }
 
 .education li b {
