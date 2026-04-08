@@ -237,6 +237,40 @@
   text-shadow: 0 0 2px #00ff9f22;
 }
 
+.education ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.experience li {
+  position: relative;
+  background: rgba(0, 255, 159, 0.05);
+  border-left: 4px solid #00ff9f; /* neon left border */
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.experience li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 255, 159, 0.3);
+}
+
+.experience li b {
+  color: #00ff9f;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.experience li span {
+  font-size: 0.9rem;
+  color: #bbb;
+  text-shadow: 0 0 2px #00ff9f22;
+}
 
     
     /* Certifications & Projects Grid */
@@ -312,19 +346,25 @@
 
     <section class="contact">
       <h3>Contact Info</h3>
-      <p>📞 0370 0605586</p>
+      <p>📞 0303 7872480</p>
       <p>📍  Harappa, Sahiwal</p>
-      <p>📧 <a href="mailto:irtazahassan0322@gmail.com">irtazahassan0322@gmail.com</a></p>
-      <p>🔗 <a href="https://linkedin.com/in/irtaza-hassan-3a93793b8">linkedin.com/in/irtaza-hassan-3a93793b8</a></p>
+      <p>📧 <a href="mailto:irtazahassan460@gmail.com">irtazahassan460@gmail.com</a></p>
+      <p>🔗 <a href="linkedin.com/in/irtaza-hassan-236b40251">linkedin.com/in/irtaza-hassan-236b40251</a></p>
     </section>
 
     <section class="profile">
       <h3>Profile</h3>
       <p>
-       Computer Science graduate with a CGPA of 3.3. Have a basic understanding of
-       Web Development, Game Development, and Python programming, with a
-       growing interest in Artificial Intelligence. I am highly motivated to continue
-       learning and aim to build my career in the fields of Python and AI.
+      Computer Science graduate with a CGPA of 3.3 and 6 months of professional
+      experience in game development at Finz Games. I have worked on multiple
+      projects, including developing games from scratch, implementing new features,
+      optimizing level design, integrating plugins, and managing ad systems.
+
+      I have a strong foundation in game development using Unity and C#, with a
+      passion for creating engaging and high-quality gaming experiences. I am a
+      motivated and fast learner, eager to continuously improve my skills and build
+      a successful career in the game development industry.
+
       </p>
     </section>
 
@@ -348,7 +388,23 @@
     </li>
   </ul>
 </section>
+    </section>
 
+   <section class="experience">
+  <h3>Experience</h3>
+  <ul>
+    <li>
+      <b>Finz Games</b>
+      <span>Associate Game Developer</span>
+       <span>(Jan 2026 - Present)</span>
+    </li>
+    <li>
+      <b>Finz Games</b>
+      <span>Game Developer Intern</span>
+       <span>(Nov 2025 - Jan 2026 )</span>
+    </li>
+  </ul>
+</section>
 
    <section class="skills">
   <h3>Skills</h3>
@@ -402,7 +458,7 @@
     </section>
 
     <section class="projects">
-      <h3>Projects</h3>
+      <h3>Self Learning Projects</h3>
       <ul>
         <li>
           <b>Football Challenge</b> – 
